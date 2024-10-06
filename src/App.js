@@ -1,14 +1,12 @@
 import './App.css';
+import GoalList from './components/GoalList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <div className="course-goals">
+      <h2>Course Goals</h2>
+      <GoalList />
+    </div >
   );
 }
 
