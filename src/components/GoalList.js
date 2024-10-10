@@ -2,12 +2,11 @@ import './GoalList.css';
 
 
 function GoalList(props) {
-  console.log("🪚 props:", props);
   return (
     <ul className="goal-list">
-      <li>Finish the course</li>
-      <li>Learn all about the course main topics</li>
-      <li>Help Other students</li>
+      {props.goals.map((goal) => (
+        <li key={goal.id}>{goal.text}</li>
+      ))}
     </ul>
   )
 
