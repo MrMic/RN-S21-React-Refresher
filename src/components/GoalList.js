@@ -1,7 +1,8 @@
 import './GoalList.css';
 
 
-function GoalList() {
+function GoalList(props) {
+  console.log("🪚 props:", props);
   return (
     <ul className="goal-list">
       <li>Finish the course</li>
