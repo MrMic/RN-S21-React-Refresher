@@ -1,5 +1,6 @@
 import './NewGoal.css'
-function NewGoal() {
+function NewGoal(props) {
+  // ______________________________________________________________________
   function addGoalHandler(event) {
     event.preventDefault();
 
@@ -8,10 +9,11 @@ function NewGoal() {
       text: 'My new Goal!',
     };
 
-    console.log("🪚 newGoal:", newGoal);
+    props.onAddGoal(newGoal);
+
   }
 
-
+  // ______________________________________________________________________
   return (
     <div className="new-goal">
       <form onSubmit={addGoalHandler}>
