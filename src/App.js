@@ -14,7 +14,7 @@ function App() {
   // ______________________________________________________________________
   function addGoalHandler(newGoal) {
     // setCourseGoals(courseGoals.concat(newGoal));
-    setCourseGoals(courseGoals => [...courseGoals, newGoal]);
+    setCourseGoals(prevCourseGoals => prevCourseGoals.concat(newGoal));
   }
 
   return (
